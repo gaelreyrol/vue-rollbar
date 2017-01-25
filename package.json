@@ -1,0 +1,28 @@
+{
+  "name": "vue-rollbar",
+  "version": "0.1.0",
+  "description": "Rollbar plugin for Vue.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zevran/vue-rollbar.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "vue-plugin",
+    "rollbar"
+  ],
+  "author": "Gaël Reyrol <gael.reyrol@gmail.com>",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/Zevran/vue-rollbar/issues"
+  },
+  "homepage": "https://github.com/Zevran/vue-rollbar#readme",
+  "dependencies": {
+    "rollbar-browser": "^1.9.2"
+  },
+  "devDependencies": {
+    "vue": "^2.1.10"
+  }
+}
