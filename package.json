@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Zevran/vue-rollbar#readme",
   "dependencies": {
-    "rollbar-browser": "^1.9.2"
+    "rollbar": "^2.0.0"
   },
   "devDependencies": {
     "vue": "^2.1.10"
