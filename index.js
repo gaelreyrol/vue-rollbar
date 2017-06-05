@@ -1,7 +1,7 @@
-var rollbar = require('rollbar-browser');
+var rollbar = require("rollbar");
 
 module.exports = {
-	install: function (Vue, options) {
-		Vue.rollbar = rollbar.init(options);
-	}
+  install: function(Vue, options) {
+    Vue.rollbar = rollbar.init(options);
+  }
 };
