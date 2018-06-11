@@ -1,5 +1,10 @@
 # vue-rollbar
 Rollbar plugin for Vue.js
+### Installation
+
+```
+npm install vue-rollbar --save
+```
 
 ### Usage
 
