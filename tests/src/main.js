@@ -3,7 +3,9 @@ import App from './App.vue'
 import Rollbar from '../../index.js'
 
 Vue.use(Rollbar, {
-  accessToken: ROLLBAR_CLIENT_TOKEN
+  accessToken: ROLLBAR_CLIENT_TOKEN,
+  captureUncaught: true,
+  captureUnhandledRejections: true,
 })
 
 new Vue({
