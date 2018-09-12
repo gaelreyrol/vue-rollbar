@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var dotenv = require('dotenv')
+var VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 dotenv.config()
 
@@ -15,17 +16,17 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-          }
-          // other vue-loader options go here
-        }
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        options: {
+          presets: [
+            '@babel/preset-env'
+          ]
+        }
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -33,6 +34,10 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },
@@ -50,6 +55,7 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   plugins: [
+    new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       'ROLLBAR_CLIENT_TOKEN': JSON.stringify(process.env.ROLLBAR_CLIENT_TOKEN)
     })
