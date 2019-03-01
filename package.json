@@ -1,6 +1,6 @@
 {
   "name": "vue-rollbar",
-  "version": "0.2.4",
+  "version": "1.0.0",
   "description": "Rollbar plugin for Vue.js",
   "main": "index.js",
   "scripts": {
