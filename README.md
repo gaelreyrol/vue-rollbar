@@ -30,7 +30,7 @@ You can now use Rollbar anywhere in your Vue app.
 ```javascript
 Vue.rollbar.debug('Yohyo!');
 // or in a vue component
-this.rollbar.debug('Yohyo!')
+this.$rollbar.debug('Yohyo!')
 ```
 
 See [Rollbar javascript documentation](https://rollbar.com/docs/notifier/rollbar.js/) for options
