@@ -39,7 +39,7 @@
 export default {
   name: 'app',
   created() {
-    this.rollbar.debug('Yohyo!')
+    this.$rollbar.debug('Yohyo!')
   },
   data() {
     return {
