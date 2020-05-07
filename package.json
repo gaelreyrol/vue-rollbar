@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Rollbar plugin for Vue.js",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "dev": "cd tests && cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cd tests && cross-env NODE_ENV=production webpack --progress --hide-modules"
